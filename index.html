@@ -19,6 +19,7 @@
         <button class="btn btn-info mb-3" @click="generateEmail">Generate 10 emails</button>
         <ul>
             <li 
+            v-if="(generatedEmail.length == 10)"
             v-for="(e, index) in generatedEmail" 
             :key="e"
             >{{generatedEmail[index]}}</li>
